@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		F1FFFA881E54D33100DAE7C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FFFA871E54D33100DAE7C2 /* AppDelegate.swift */; };
-		F1FFFA8A1E54D33100DAE7C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FFFA891E54D33100DAE7C2 /* ViewController.swift */; };
+		F1FFFA8A1E54D33100DAE7C2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FFFA891E54D33100DAE7C2 /* MainViewController.swift */; };
 		F1FFFA8D1E54D33100DAE7C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1FFFA8B1E54D33100DAE7C2 /* Main.storyboard */; };
 		F1FFFA8F1E54D33100DAE7C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1FFFA8E1E54D33100DAE7C2 /* Assets.xcassets */; };
 		F1FFFA921E54D33100DAE7C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1FFFA901E54D33100DAE7C2 /* LaunchScreen.storyboard */; };
+		F1FFFA9A1E54D50400DAE7C2 /* Building.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FFFA991E54D50400DAE7C2 /* Building.swift */; };
+		F1FFFA9C1E54D71D00DAE7C2 /* BuildingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FFFA9B1E54D71D00DAE7C2 /* BuildingCell.swift */; };
+		F1FFFA9E1E54DB6E00DAE7C2 /* AddGoldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FFFA9D1E54DB6E00DAE7C2 /* AddGoldDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F1FFFA841E54D33100DAE7C2 /* ninja_gold_custom_cell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ninja_gold_custom_cell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1FFFA871E54D33100DAE7C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F1FFFA891E54D33100DAE7C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F1FFFA891E54D33100DAE7C2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F1FFFA8C1E54D33100DAE7C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F1FFFA8E1E54D33100DAE7C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1FFFA911E54D33100DAE7C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1FFFA931E54D33100DAE7C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1FFFA991E54D50400DAE7C2 /* Building.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Building.swift; sourceTree = "<group>"; };
+		F1FFFA9B1E54D71D00DAE7C2 /* BuildingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildingCell.swift; sourceTree = "<group>"; };
+		F1FFFA9D1E54DB6E00DAE7C2 /* AddGoldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddGoldDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +61,14 @@
 			isa = PBXGroup;
 			children = (
 				F1FFFA871E54D33100DAE7C2 /* AppDelegate.swift */,
-				F1FFFA891E54D33100DAE7C2 /* ViewController.swift */,
+				F1FFFA891E54D33100DAE7C2 /* MainViewController.swift */,
 				F1FFFA8B1E54D33100DAE7C2 /* Main.storyboard */,
 				F1FFFA8E1E54D33100DAE7C2 /* Assets.xcassets */,
 				F1FFFA901E54D33100DAE7C2 /* LaunchScreen.storyboard */,
 				F1FFFA931E54D33100DAE7C2 /* Info.plist */,
+				F1FFFA991E54D50400DAE7C2 /* Building.swift */,
+				F1FFFA9B1E54D71D00DAE7C2 /* BuildingCell.swift */,
+				F1FFFA9D1E54DB6E00DAE7C2 /* AddGoldDelegate.swift */,
 			);
 			path = ninja_gold_custom_cell;
 			sourceTree = "<group>";
@@ -96,7 +105,7 @@
 				TargetAttributes = {
 					F1FFFA831E54D33100DAE7C2 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 32H24EKY3R;
+						DevelopmentTeam = UJBSBJQ26X;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -137,8 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1FFFA8A1E54D33100DAE7C2 /* ViewController.swift in Sources */,
+				F1FFFA8A1E54D33100DAE7C2 /* MainViewController.swift in Sources */,
+				F1FFFA9E1E54DB6E00DAE7C2 /* AddGoldDelegate.swift in Sources */,
+				F1FFFA9A1E54D50400DAE7C2 /* Building.swift in Sources */,
 				F1FFFA881E54D33100DAE7C2 /* AppDelegate.swift in Sources */,
+				F1FFFA9C1E54D71D00DAE7C2 /* BuildingCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,7 +273,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 32H24EKY3R;
+				DEVELOPMENT_TEAM = UJBSBJQ26X;
 				INFOPLIST_FILE = ninja_gold_custom_cell/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "AF1.ninja-gold-custom-cell";
@@ -274,7 +286,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 32H24EKY3R;
+				DEVELOPMENT_TEAM = UJBSBJQ26X;
 				INFOPLIST_FILE = ninja_gold_custom_cell/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "AF1.ninja-gold-custom-cell";
